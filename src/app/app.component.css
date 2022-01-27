@@ -1,0 +1,27 @@
+
+:host {
+    font-family: verdana;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:white;
+  }
+  
+
+  .contenedor {
+    margin-top: 130px
+  }
+
+
+
+.encabezado {
+  background-color: #333;
+  color: white;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  left: 0; /* Posicionamos la cabecera al lado izquierdo */
+  top: 0; /* Posicionamos la cabecera pegada arriba */
+  position: fixed;
+
+}

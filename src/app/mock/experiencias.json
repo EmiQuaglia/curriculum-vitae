@@ -1,0 +1,26 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "fecha_inicio": "2020",
+            "fecha_final": "2022",
+            "titulo": "Sr front dev",
+            "lugar": "Globant",
+            "descripcion": "me encargaba del frontend de un proyecto"
+        },
+        {
+            "fecha_inicio": "1992",
+            "fecha_final": "2323",
+            "titulo": "dsfsdf",
+            "lugar": "dsfsdfsfd",
+            "descripcion": "me encargaba del frontend de un proyecto"
+        },
+        {
+            "fecha_inicio": "2020",
+            "fecha_final": "2022",
+            "titulo": "Sr front dev",
+            "lugar": "Globant",
+            "descripcion": "me encargaba del frontend de un proyecto"
+        }
+    ]
+}
