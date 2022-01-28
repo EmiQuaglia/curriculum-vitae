@@ -1,0 +1,30 @@
+
+
+1-- working directory
+
+2-- stage directory
+
+3-- commited
+
+4-- push directory
+
+
+
+
+desde la oficina 
+
+1 instalar git
+2 git clone desde la carpeta que quieras
+3 cd curriculum-vitae
+4 git fetch origin
+5 git checkout master
+
+
+Para volcar a la master 
+1 pararse sobre master: git checkout master
+2 git merge <rama a mergear>  fixEstilos
+3 git push 
+
+
+Para crear una rama nueva 
+1 git checkout -b <nuevo nombre> 
