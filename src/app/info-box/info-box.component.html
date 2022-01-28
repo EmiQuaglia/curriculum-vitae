@@ -1,29 +1,30 @@
 
 
 <div class="contenedor">
-   <div 
-    *ngFor="let item of experiencias" class="experiencia">
-    <div>
-        <h1 class= "title"> {{item.tipo}}</h1>
-       </div> 
-        <h2 class="subtitle">{{ item.titulo }}</h2>
-        <p>{{ item.duracion }}</p>
-        <p>{{ item.descripcion }}</p>
-        <p></p>
-    </div>
+    <button (click)="toggleExperiencias()">Abrir</button>
+    <h1 class= "title">Experiencia Laboral</h1>
+    <div *ngFor="let item of experiencias" class="experiencia">
+        
+        <ng-container *ngIf="showExperiencias">
+            <h2 class="subtitle">{{ item.titulo }}</h2>
+            <p>{{ item.duracion }}</p>
+            <p>{{ item.descripcion }}</p>
+        </ng-container>
+     </div>
 
-  
+    
+</div>
 
-    <div 
-    *ngFor="let item of formacion" class="formacion">
-        <div>
-         <h1 class= "title"> {{item.tipo}}</h1>
-        </div> 
-
+<div class="contenedor">
+    <button (click)="toggleFormaciones()">Abrir</button>
+    <h1 class= "title"> Formación Profesional</h1>
+    <div *ngFor="let item of formacion" class="formacion">
+        
+      <ng-container *ngIf="showFormaciones">
         <h2 class="subtitle">{{ item.titulo }}</h2>
         <p>{{ item.institucion}}</p>
         <p>{{ item.fechaEgreso }}</p>
         <p></p>
-    
-</div>
+      </ng-container>
+    </div>
 </div>
