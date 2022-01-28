@@ -12,11 +12,13 @@ export class InfoBoxComponent {
 
   @Input() experiencias: any[] = [];
   @Input() formacion: any[] = [];
+
   showExperiencias = false
   showFormaciones = false
 
   constructor() {};
 
+  
   toggleExperiencias() {
     this.showExperiencias = !this.showExperiencias;
   }

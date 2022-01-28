@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienciasService } from './experiencias.service';
 import { FormacionService } from './formacion.service';
-import { DatosPersonalesService } from './datospersonales.service';
+
 
 @Component({
   selector: 'app-root',
@@ -15,13 +15,12 @@ export class AppComponent implements OnInit {
   listaFormacion: any[] = [];
   listaDatosPersonales: any[] = [];
 
-  constructor(private experienciasService: ExperienciasService, private formacionService: FormacionService, private datospersonalesService: DatosPersonalesService) { }
+  constructor(private experienciasService: ExperienciasService, private formacionService: FormacionService) { }
 
   ngOnInit(): void {
     // este es un evento que se ejecuta cuando se inicia el componente
     this.getExperiencias();
     this.getFormacion();
-    this.getDatosPersonales();
   }
 
   private getExperiencias(): void {
@@ -44,9 +43,6 @@ export class AppComponent implements OnInit {
   })
   }
 
-  private getDatosPersonales () {
-    this.listaDatosPersonales = this.datospersonalesService.getDatosPersonales().data ;
-    
-  }
+  
 
 }
