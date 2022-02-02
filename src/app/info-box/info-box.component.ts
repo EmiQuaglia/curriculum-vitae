@@ -26,6 +26,11 @@ export class InfoBoxComponent {
   toggleFormaciones (){
     this.showFormaciones = !this.showFormaciones;
   }
+
+  flechaExperiencias(){
+    this.showExperiencias = !this.showExperiencias;
+  }
+  
 }
 
 
