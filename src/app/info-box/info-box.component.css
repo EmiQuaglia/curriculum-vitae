@@ -21,7 +21,13 @@
 }
 
 .img-thumbnail {
-    width: 50px;
-    height: 50px;
-    /* Acá debería ir la imagen de la flecha que esta en assetes/flechaabjo.png pero no logré ponerla. Nunca me reconoció el url */
-}
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+

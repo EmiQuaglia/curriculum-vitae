@@ -1,28 +1,30 @@
 <header class="encabezado">
     <img src="../assets/cat.jpg" class="img-thumbnail" alt="...">
-    <div class= "accesoredes">
-        <!-- Ponerlos horizontales, arriba a la derecha, con icono y link -->
-        <ul class="rrss">
-            <li>
-                <a href="www.facebook.com.ar"> FB
-                </a>
-            </li>
-            <li>
-                <a href="www.twitter.com.ar"> TWT
-                </a>
-            </li>
-        </ul>    
-    </div>
     <div>
         <h1>Emiliana Quaglia Rossi</h1>
         <h2>Full Stack Developer Jr.</h2>
         <h6>Técnica en Comunicación Social especializada en Media Marketing y Comunicación Institucional| Locutora N°5050 | Full Stack Developer Jr</h6>
     </div>
+
+    <div class= "accesoredes">
+        <!-- Ponerlos horizontales, arriba a la derecha, con icono Boostrap o .png y link -->
+        <ul class="rrss">
+            <li class=fb>
+                 <!-- NO anda y desaparecio-->
+                <a style="color: #3b5998;" href="#!" role="button"> <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="www.twitter.com.ar">TWT</a>
+            </li>
+        </ul>    
+    </div>
+
 </header>
 
 
 
-
+<!-- Como hago para poner imagen de cada experiencia a la izquierda -->
 <section class="contenedor">
     <app-info-box [experiencias]="listaExperiencias" [formacion]="listaFormacion"></app-info-box>
 

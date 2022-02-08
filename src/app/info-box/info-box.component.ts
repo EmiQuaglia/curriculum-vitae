@@ -27,9 +27,15 @@ export class InfoBoxComponent {
     this.showFormaciones = !this.showFormaciones;
   }
 
-  flechaExperiencias(){
-    this.showExperiencias = !this.showExperiencias;
-  }
+ textoButton(){
+   if(this.showExperiencias)
+    console.log("ver menos")
+
+ }
+
+
+
+
   
 }
 

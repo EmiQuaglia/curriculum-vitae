@@ -27,7 +27,9 @@ export class AppComponent implements OnInit {
     this.listaExperiencias = this.experienciasService.getExperiencias().data.map((item) => {
       return {
         ...item,
+        institucion: "En " + item.lugar,
         duracion: "Desde el año " + item.fecha_inicio + " hasta " + item.fecha_final
+        
       }
     })
   }
