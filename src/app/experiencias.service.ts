@@ -19,6 +19,7 @@ export class ExperienciasService {
               "lugar": "Municipio de Tandil",
               "descripcion": "Creación de contenidos. Gestión de Redes Sociales. Comunicación institucional",
           },
+        
           {
               "fecha_inicio": "2016",
               "fecha_final": " la actualidad",

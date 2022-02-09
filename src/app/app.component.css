@@ -1,7 +1,7 @@
 
 
   .contenedor {
-    margin-top: 400px; 
+    margin-top: 500px; 
     margin-left: 62px;
   }
 
@@ -16,6 +16,7 @@
   left: 0;
   top: 0;
   position: fixed;
+  margin-top: 80px;
   background-image: url(https://imagendegatos.com/wp-content/uploads/2017/06/Im%C3%A1genes-De-Gatitos-Para-Portadas-De-Facebook.jpg);
   display: flex;
   align-items: center;
@@ -58,7 +59,31 @@ h6, .h6{
 
 .rrss{ 
 display:flex;
+margin-top: 15px;
+position:fixed
+
+}
+/* no se ven, quedaron abajo de la imagen de Argetina programa, tapados por el encabezado */
+
+.fb{
+  margin-left: 400px;
+  margin-top: 20px;
+ 
 }
 
+.twt{
+  margin-left: 400px;
 
+}
+.header {
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  position:fixed;
+}
 
+.img-header{
+  width: 342px;
+  height: 72px;
+}
