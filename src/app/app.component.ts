@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienciasService } from './experiencias.service';
 import { FormacionService } from './formacion.service';
-
-
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +13,8 @@ export class AppComponent implements OnInit {
   listaExperiencias: any[] = [];
   listaFormacion: any[] = [];
   listaDatosPersonales: any[] = [];
+
+  fbIcon = faFacebook;
 
   constructor(private experienciasService: ExperienciasService, private formacionService: FormacionService) { }
 

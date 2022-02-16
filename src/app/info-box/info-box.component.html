@@ -1,7 +1,11 @@
 
 
 <div class="contenedor">
-    <h1 class= "title">Experiencia Laboral</h1>
+    <div class="d-flex align-items-center">
+      <h1 class= "title">Experiencia Laboral</h1>
+      <fa-icon (click)="toggleExperiencias()" *ngIf="showExperiencias" [icon]="arrowUp"></fa-icon>
+      <fa-icon (click)="toggleExperiencias()" *ngIf="!showExperiencias" [icon]="arrowDown"></fa-icon>
+    </div>
     <div *ngFor="let item of experiencias" class="experiencia">
         
         <ng-container *ngIf="showExperiencias">
@@ -11,37 +15,21 @@
             <p>{{ item.descripcion }}</p>
         </ng-container>
      </div>
-     <button (click)="toggleExperiencias()" class="btn btn-primary">Ver más
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-      </svg>
-     </button>
-
-    
 </div>
 
 <div class="contenedor">
-    <!-- Como armar una funcion que cambie a "ver menos" cuando se haga click -->
-    <h1 class= "title"> Formación Profesional</h1>
+    <div class="d-flex align-items-center">
+      <h1 class= "title"> Formación Profesional</h1>
+      <fa-icon (click)="toggleFormaciones()" *ngIf="showFormaciones" [icon]="arrowUp"></fa-icon>
+      <fa-icon (click)="toggleFormaciones()" *ngIf="!showFormaciones" [icon]="arrowDown"></fa-icon>
+    </div>
 
-    <div *ngFor="let item of formacion" class="formacion">
-     
-        
-      <ng-container *ngIf="showFormaciones">
-        <!-- Creo que se puede poner la imagen como un dato en el service.ts de cada una, y que acá lo traiga como un dato del item??? AYUDA -->
+    <ng-container *ngIf="showFormaciones">
+      <div *ngFor="let item of formacion" class="formacion">
         <h2 class="subtitle">{{ item.titulo }}</h2>
         <p>{{ item.institucion}}</p>
         <p>{{ item.fechaEgreso }}</p>
-        
-      </ng-container>
-
-
-    </div>
-    
-    <button (click)="toggleFormaciones()" class="btn btn-primary" > Ver más
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
-      </svg>
-    </button>
-    
+        <img [src]="item.img_src" class="img-thumbnail" alt="...">     
+      </div>
+    </ng-container>
 </div>

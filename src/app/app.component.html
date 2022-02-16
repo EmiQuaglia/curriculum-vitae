@@ -1,35 +1,28 @@
 <header class="header">
     <a href="https://argentinaprograma.inti.gob.ar/"><img src="../assets/Argentina-Programa-FUENTE-www.argentina.gob_.png" alt="Argentina Programa" class=img-header/></a>
-        <!-- Ponerlos horizontales (ya está), arriba a la derecha (ya está), con icono Boostrap o .png (me falta esto) y link (link ya está) EL NUEVO PROBLEMA ES QUE ME QUEDÓUNA CAPA ABAJO DEL HEADER -->
-        <ul class="rrss">
-            <li class=fb>
-                <a href="https://www.facebook.com/emirossiquaglia">FB</a>
-            </li>
-            <li class="twt">
-                <a href="https://twitter.com/emirossiquaglia">TWT</a>
-            </li>
-        </ul>    
-
     <div class="encabezado">
         <img src="../assets/cat.jpg" class="img-thumbnail" alt="...">
-        <div>
+        <div class="mt-large">
+            <nav>
+                <ul class="rrss">
+                    <li class=fb>
+                        <a href="https://www.facebook.com/emirossiquaglia">
+                            <fa-icon [icon]="fbIcon" size="3x"></fa-icon>
+                        </a>
+                    </li>
+                    <li class="twt">
+                        <a href="https://twitter.com/emirossiquaglia">TWT</a>
+                    </li>
+                </ul> 
+            </nav>
             <h1>Emiliana Quaglia Rossi</h1>
             <h2>Full Stack Developer Jr.</h2>
             <h6>Técnica en Comunicación Social especializada en Media Marketing y Comunicación Institucional| Locutora N°5050 | Full Stack Developer Jr</h6>
         </div>
     </div>
 </header>
-
-
-
-
-
-<!-- Necesito que cada experiencia individualmente y cada espacio de formación profesional tengan el logo a la izquierda del título. Nunca lo puede poner, llegué a ponerlo
-en esta parte pero se repite la misma imagen den cada item. O si no se me ve la imagen cuando el contenedor está cerrado arriba del título -->
 <section class="contenedor">
     <app-info-box [experiencias]="listaExperiencias" [formacion]="listaFormacion"></app-info-box>
-
 </section>
-
 <!-- Me queda poner graficos tipo anillo para las skills. Busqué en Boostrap y no encontré nada similar. Ahí yo debería poner mis habilidades en programación, 
     idioma y alguna pavada más -->

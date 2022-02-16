@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ExperienciasService } from '../experiencias.service';
-import { FormacionService } from '../formacion.service';
+import { Component, Input } from '@angular/core';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-info-box',
@@ -15,6 +14,8 @@ export class InfoBoxComponent {
 
   showExperiencias = false
   showFormaciones = false
+  arrowUp = faAngleUp;
+  arrowDown = faAngleDown;
 
   constructor() {};
 
@@ -26,12 +27,6 @@ export class InfoBoxComponent {
   toggleFormaciones (){
     this.showFormaciones = !this.showFormaciones;
   }
-
-
-
-
-
-  
 }
 
 
