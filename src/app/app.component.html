@@ -1,12 +1,12 @@
 <header class="header">
-    <a title="Argentina Programa" href="https://argentinaprograma.inti.gob.ar/"><img src="../assets/Argentina-Programa-FUENTE-www.argentina.gob_.png" alt="Argentina Programa" class=img-header/></a>
-        <!-- Ponerlos horizontales, arriba a la derecha, con icono Boostrap o .png y link -->
+    <a href="https://argentinaprograma.inti.gob.ar/"><img src="../assets/Argentina-Programa-FUENTE-www.argentina.gob_.png" alt="Argentina Programa" class=img-header/></a>
+        <!-- Ponerlos horizontales (ya está), arriba a la derecha (ya está), con icono Boostrap o .png (me falta esto) y link (link ya está) EL NUEVO PROBLEMA ES QUE ME QUEDÓUNA CAPA ABAJO DEL HEADER -->
         <ul class="rrss">
             <li class=fb>
-                <a href="facebook.com">FB</a>
+                <a href="https://www.facebook.com/emirossiquaglia">FB</a>
             </li>
             <li class="twt">
-                <a href="www.twitter.com">TWT</a>
+                <a href="https://twitter.com/emirossiquaglia">TWT</a>
             </li>
         </ul>    
 
@@ -24,9 +24,12 @@
 
 
 
-<!-- Como hago para poner imagen de cada experiencia a la izquierda -->
+<!-- Necesito que cada experiencia individualmente y cada espacio de formación profesional tengan el logo a la izquierda del título. Nunca lo puede poner, llegué a ponerlo
+en esta parte pero se repite la misma imagen den cada item. O si no se me ve la imagen cuando el contenedor está cerrado arriba del título -->
 <section class="contenedor">
     <app-info-box [experiencias]="listaExperiencias" [formacion]="listaFormacion"></app-info-box>
 
 </section>
 
+<!-- Me queda poner graficos tipo anillo para las skills. Busqué en Boostrap y no encontré nada similar. Ahí yo debería poner mis habilidades en programación, 
+    idioma y alguna pavada más -->

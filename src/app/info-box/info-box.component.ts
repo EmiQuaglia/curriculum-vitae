@@ -27,11 +27,6 @@ export class InfoBoxComponent {
     this.showFormaciones = !this.showFormaciones;
   }
 
- textoButton(){
-   if(this.showExperiencias)
-    console.log("ver menos")
-
- }
 
 
 

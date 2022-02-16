@@ -6,6 +6,7 @@
         
         <ng-container *ngIf="showExperiencias">
             <h2 class="subtitle">{{ item.titulo }}</h2>
+            <p>{{ item.lugar }}</p>
             <p>{{ item.duracion }}</p>
             <p>{{ item.descripcion }}</p>
         </ng-container>
@@ -27,10 +28,11 @@
      
         
       <ng-container *ngIf="showFormaciones">
-        <!-- aca deberia ir una imagen que retome un dato de "formaciones" para que cada -->
+        <!-- Creo que se puede poner la imagen como un dato en el service.ts de cada una, y que acá lo traiga como un dato del item??? AYUDA -->
         <h2 class="subtitle">{{ item.titulo }}</h2>
         <p>{{ item.institucion}}</p>
         <p>{{ item.fechaEgreso }}</p>
+        
       </ng-container>
 
 
